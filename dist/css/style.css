@@ -467,7 +467,8 @@ input {
   cursor: pointer;
   -webkit-transition: .3s;
   -o-transition: .3s;
-  transition: .3s; }
+  transition: .3s;
+  outline: none; }
   .button:hover {
     background-color: #124fb3; }
   .button--prev, .button--next {
