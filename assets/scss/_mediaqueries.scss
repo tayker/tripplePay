@@ -1,0 +1,68 @@
+@media screen and (max-width:1000px){
+    .header{
+        .container{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+    .main{
+        .container{
+            padding: 0 2rem;
+            .form-wrapper{
+                max-width: 50rem;
+                .form{
+                    &__row{
+                        flex-direction: column;
+                        align-items: center;
+                        input.error{
+                            margin-bottom: 0;
+                        }
+                        .error-message{
+                            margin-bottom: 2rem;
+                        }
+                        input{
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+            }
+            .info{
+                padding-top: 35rem;
+                
+                .steps{
+                    flex-direction: column;
+                    &__item{
+                        margin-bottom: 3rem;
+                        .description{
+                            max-width: 40rem;
+                        }
+                    }
+                }
+            }
+            .slider-wrapper{
+                max-width: 800px;
+                .payment-systems{
+                    
+                }
+            }
+        }
+    }
+    .footer{
+        .container{
+            .privacy-list{
+                max-width: 30rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 599px){
+    .main{
+        .container{
+            .slider-wrapper{
+                .payment-systems{
+                    padding-bottom: 5rem;
+                }
+            }
+        }
+    }
+}

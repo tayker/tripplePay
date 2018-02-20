@@ -1,0 +1,215 @@
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.header, .section--apply{
+    background: linear-gradient( -45deg, rgb(2,85,138) 0%, rgb(50,204,233) 100%);
+}
+.header{
+    position: relative;
+    .container{
+        padding: 3.7rem 0 22.5rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .logo{
+            background: url(../images/tripplepay_logo.svg);
+            width: 195px;
+            height: 147px;
+            background-repeat: no-repeat;
+        }
+        .description{
+            font-size: 14.527px;
+            color: rgb(255, 255, 255);
+            line-height: 1.2;
+            text-align: center;
+        }
+    }
+    .vawe{
+        background: url(../images/wave_bg_block_1.svg);
+        background-repeat: no-repeat;
+        width: 110%;
+        height: 50px;
+        position: absolute;
+        bottom: -7%;
+        left: -20px;
+    }
+}
+.main{
+    .container{
+        position: relative;
+        text-align: center;
+        .form-wrapper{
+            position: absolute;
+            top: -10rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            max-width: 1080px;
+            width: 100%;
+            padding: 4.2rem 9.6rem;
+            border-radius: 5px;
+            box-shadow: 3.746px 9.272px 25.38px 1.62px rgba(0, 0, 0, 0.22);
+            .form{
+                
+                &__row{
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    &--second{
+                        padding: 4rem 0 0 0;
+                        justify-content: center;
+                    }
+                }
+            }
+            .confirm-popup{
+                position: absolute;
+                height: 100%;
+                background-color: #fff;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 5px;
+                box-shadow: 3.746px 9.272px 25.38px 1.62px rgba(0, 0, 0, 0.22);
+                padding: 4.2rem 0;
+                max-width: 41rem;
+                width: 100%;
+                display: none;
+                
+                &__title{
+                    font-size: 2rem;
+                    color: rgb(98, 98, 97);
+                    line-height: 1.2;
+                }
+                .icon{
+                    &--send{
+                        background: url(../images/contact_the_bank.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 96px;
+                        height: 47px;
+                        position: absolute;
+                        top: 13.5rem;
+                        left: 50%;
+                        transform: translatex(-50%);
+                    }
+                }
+            }
+        }
+        .info{
+            padding: 20rem 0 10rem 0;
+            
+            .steps{
+                display: flex;
+                justify-content: space-between;
+                
+                &__item{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .icon{
+                        width: 144px;
+                        height: 104px;
+                        background-repeat: no-repeat;
+                        transition: .3s;
+                        backface-visibility: hidden;
+                        &:hover{
+                            transform: translateY(-10px) scale(1.1);
+                        }
+                        &--contact-us{
+                            background: url(../images/contact_us.svg);
+                        }
+                        &--contact-bank{
+                            background: url(../images/contact_the_bank.svg);
+                        }
+                        &--integration{
+                            background: url(../images/integration.svg)
+                        }
+                    }
+                    .description{
+                        font-size: 1.7rem;
+                        color: rgb(59, 59, 58);
+                        line-height: 1.294;
+                        max-width: 24rem;
+                    }
+                }
+            }
+        }
+        .slider-wrapper{
+            position: absolute;
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 3.746px 9.272px 25.38px 1.62px rgba(0, 0, 0, 0.22);
+            max-width: 1080px;
+            width: 100%;
+            .payment-systems{
+                max-width: 1050px;
+                margin: auto;
+                padding: 4.8rem 8rem 0 8rem;
+                &__item{
+                    outline: none;
+                    img{
+                        margin: auto;
+                    }
+                }
+                .slick-dots {
+                    padding: 0;
+                    li{
+                        display: inline-block;
+                        margin-right: 12px;
+                        
+                        button{
+                            width: 10px;
+                            height: 10px;
+                            font-size: 0;
+                            border-radius: 50px;
+                            border: none;
+                            cursor: pointer;
+                            border: 1px solid rgb(0, 153, 223);
+                            background: none;
+                            padding: 0;
+                        }
+                        &.slick-active{
+                            button{
+                                background: rgb(0, 153, 223);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.section{
+    &--apply{
+        .container{
+            padding: 20rem 0 12rem 0;
+            text-align: center;
+        }
+    }
+}
+.footer{
+    background-color: #182a53;
+    .container{
+        padding: 6.4rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .privacy-list{
+            width: 35rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+        }
+        .copiryght{
+            font-size: 1.2rem;
+            color: rgb(255, 255, 255);
+            line-height: 1.2;
+
+        }
+    }
+}
